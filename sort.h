@@ -62,7 +62,7 @@ void selection_sort(val_t *restrict A, val_t na);
 
 
 // utilities
-static inline void INPLACESWAP(val_t *a, val_t *b) {
+static inline void swap(val_t *a, val_t *b) {
     /** careful not to XOR two equal values **/
     if (*a != *b) {
         *a = *b ^ *a;

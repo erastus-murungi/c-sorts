@@ -36,7 +36,7 @@ void max_heapify(val_t *A, val_t na, val_t i) {
         }
         if (largest == i) break;
 
-        INPLACESWAP(&A[i], &A[largest]);
+        swap(&A[i], &A[largest]);
 
         i = largest;
     }
@@ -71,7 +71,7 @@ void _hpsort(val_t *A, val_t low, val_t na) {
     build_max_heap(A, low, na);
     uint32_t i;
     for (i = low + na - 1; i >= 1; i--) {
-        INPLACESWAP(&A[low], &A[i]);
+        swap(&A[low], &A[i]);
         max_heapify(A, i, low);
     }
 }

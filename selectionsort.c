@@ -16,7 +16,7 @@ void selection_sort(val_t *A, val_t na) {
             }
         }
         if (min_pos != i) {
-            INPLACESWAP(&A[i], &A[min_pos]);
+            swap(&A[i], &A[min_pos]);
         }
     }
 }

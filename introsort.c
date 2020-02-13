@@ -37,17 +37,17 @@ static inline val_t partition(val_t *restrict A, val_t low, val_t high) {
 
     val_t j, pi, p, i;
     pi = pivot(low, high);
-    INPLACESWAP(&A[pi], &A[high]);
+    swap(&A[pi], &A[high]);
     p = A[high];
 
     i = low - 1;
     for (j = low; j <= high - 1; j++) {
         if (A[j] < p) {
             i++;
-            INPLACESWAP(&A[i], &A[j]);
+            swap(&A[i], &A[j]);
         }
     }
-    INPLACESWAP(&A[++i], &A[high]);
+    swap(&A[++i], &A[high]);
     return i;
 }
 
