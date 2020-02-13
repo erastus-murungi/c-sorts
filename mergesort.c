@@ -42,5 +42,4 @@ val_t *msort(val_t *A, val_t na) {
     val_t *B = malloc(sizeof(val_t) * na);
     _mergesort(B, A, na);
     return B;
-
 }

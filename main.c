@@ -4,7 +4,7 @@
 #include "sort.h"
 
 int main(void) {
-    int array_size = 1000000;
+    int array_size = 100;
     int64_t *array = malloc(array_size * sizeof(val_t));
 
     random_array(array, array_size, 10);
@@ -13,7 +13,7 @@ int main(void) {
 //    if (!is_sorted(sorted_array, array_size)){
 //        fprintf(stderr, "Error");
 // }
-    quicksort_tail(array, array_size);
+    bubblesort(array, array_size);
     if (!is_sorted(array, array_size)) {
         fprintf(stderr, "Error");
     }
