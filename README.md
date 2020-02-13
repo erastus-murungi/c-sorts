@@ -8,3 +8,8 @@
 - Bubble sort.
 - Quick sort.
 - Quick sort with tail call optimization.
+- Introsort
+- Shell sort
+- Heap sort
+
+Comparison also done with inbuilt qsort.
