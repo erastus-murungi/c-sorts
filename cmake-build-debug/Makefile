@@ -150,6 +150,33 @@ bubblesort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/bubblesort.c.s
 .PHONY : bubblesort.c.s
 
+hpsort.o: hpsort.c.o
+
+.PHONY : hpsort.o
+
+# target to build an object file
+hpsort.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/hpsort.c.o
+.PHONY : hpsort.c.o
+
+hpsort.i: hpsort.c.i
+
+.PHONY : hpsort.i
+
+# target to preprocess a source file
+hpsort.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/hpsort.c.i
+.PHONY : hpsort.c.i
+
+hpsort.s: hpsort.c.s
+
+.PHONY : hpsort.s
+
+# target to generate assembly for a file
+hpsort.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/hpsort.c.s
+.PHONY : hpsort.c.s
+
 insertionsort.o: insertionsort.c.o
 
 .PHONY : insertionsort.o
@@ -285,6 +312,33 @@ selectionsort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/selectionsort.c.s
 .PHONY : selectionsort.c.s
 
+shellsort.o: shellsort.c.o
+
+.PHONY : shellsort.o
+
+# target to build an object file
+shellsort.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/shellsort.c.o
+.PHONY : shellsort.c.o
+
+shellsort.i: shellsort.c.i
+
+.PHONY : shellsort.i
+
+# target to preprocess a source file
+shellsort.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/shellsort.c.i
+.PHONY : shellsort.c.i
+
+shellsort.s: shellsort.c.s
+
+.PHONY : shellsort.s
+
+# target to generate assembly for a file
+shellsort.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/shellsort.c.s
+.PHONY : shellsort.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -297,6 +351,9 @@ help:
 	@echo "... bubblesort.o"
 	@echo "... bubblesort.i"
 	@echo "... bubblesort.s"
+	@echo "... hpsort.o"
+	@echo "... hpsort.i"
+	@echo "... hpsort.s"
 	@echo "... insertionsort.o"
 	@echo "... insertionsort.i"
 	@echo "... insertionsort.s"
@@ -312,6 +369,9 @@ help:
 	@echo "... selectionsort.o"
 	@echo "... selectionsort.i"
 	@echo "... selectionsort.s"
+	@echo "... shellsort.o"
+	@echo "... shellsort.i"
+	@echo "... shellsort.s"
 .PHONY : help
 
 

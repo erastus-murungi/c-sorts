@@ -44,6 +44,8 @@ void _mergesort(val_t *restrict A, val_t *B, val_t n);
 
 val_t *msort(val_t *A, val_t na);
 
+void shellsort(val_t *A, val_t na);
+
 static void merge(val_t *restrict C, val_t *restrict A, val_t *restrict B, val_t na, val_t nb);
 
 void random_array(val_t *restrict A, val_t na, uint8_t shift);
@@ -54,19 +56,28 @@ void selection_sort(val_t *restrict A, val_t na);
 
 
 // utilities
-static inline void INPLACESWAP(val_t *a, val_t *b){
+static inline void INPLACESWAP(val_t *a, val_t *b) {
     /** careful not to XOR two equal values **/
-    if (*a != *b){
+    if (*a != *b) {
         *a = *b ^ *a;
         *b = *a ^ *b;
         *a = *a ^ *b;
     }
 }
 
-static inline void SWAP(val_t **a, val_t **b){
+static inline void SWAP(val_t **a, val_t **b) {
     val_t *t = *b;
     *b = *a;
     *a = t;
 }
 
+/**
+ * implementation of a max heap for heap sort
+ */
+void build_max_heap(val_t *A, val_t na);
 
+void max_heapify(val_t *A, val_t na, val_t i);
+
+int check_max_heap_invariant(const val_t *A, val_t na);
+
+void hpsort(val_t *A, val_t na);

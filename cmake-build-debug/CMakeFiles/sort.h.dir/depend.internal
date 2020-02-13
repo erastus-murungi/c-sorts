@@ -4,6 +4,9 @@
 CMakeFiles/sort.h.dir/bubblesort.c.o
  /Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c
  /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+CMakeFiles/sort.h.dir/hpsort.c.o
+ /Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c
+ /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 CMakeFiles/sort.h.dir/insertionsort.c.o
  /Users/erastusmurungi/Documents/GitHub/c-sorts/insertionsort.c
  /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
@@ -18,4 +21,7 @@ CMakeFiles/sort.h.dir/quicksort.c.o
  /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 CMakeFiles/sort.h.dir/selectionsort.c.o
  /Users/erastusmurungi/Documents/GitHub/c-sorts/selectionsort.c
+ /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+CMakeFiles/sort.h.dir/shellsort.c.o
+ /Users/erastusmurungi/Documents/GitHub/c-sorts/shellsort.c
  /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h

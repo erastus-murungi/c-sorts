@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sort.h.dir/bubblesort.c.o"
+  "CMakeFiles/sort.h.dir/hpsort.c.o"
   "CMakeFiles/sort.h.dir/insertionsort.c.o"
   "CMakeFiles/sort.h.dir/main.c.o"
   "CMakeFiles/sort.h.dir/mergesort.c.o"
   "CMakeFiles/sort.h.dir/quicksort.c.o"
   "CMakeFiles/sort.h.dir/selectionsort.c.o"
+  "CMakeFiles/sort.h.dir/shellsort.c.o"
   "sort.h"
   "sort.h.pdb"
 )

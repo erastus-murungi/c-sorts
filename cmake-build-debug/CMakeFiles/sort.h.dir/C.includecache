@@ -6,31 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c
-stdint.h
+/Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c
+sort.h
+/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+assert.h
 -
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/insertionsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/main.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/mergesort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/quicksort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/selectionsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 
 /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 stdio.h
