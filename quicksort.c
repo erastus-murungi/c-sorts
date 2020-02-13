@@ -9,12 +9,12 @@ static inline double random_real() {
     return (double) random() / (double) RAND_MAX;
 }
 
-val_t randint(val_t range) {
+static inline val_t randint(val_t range) {
     return (val_t) (range * random_real());
 }
 
 
-void _quicksort(val_t *A, val_t low, val_t high) {
+void _quicksort(val_t *restrict A, val_t low, val_t high) {
     if (low < high) {
         if (high - low + 1 < INSERTION_THRESHOLD) {
             _insertionsort(A, low, high + 1);
@@ -27,7 +27,7 @@ void _quicksort(val_t *A, val_t low, val_t high) {
     }
 }
 
-void _quicksort_tail(val_t *A, val_t low, val_t high) {
+void _quicksort_tail(val_t *restrict A, val_t low, val_t high) {
     /** Uses O(lg n) extra space */
 
     while (low < high) {
@@ -47,22 +47,26 @@ void _quicksort_tail(val_t *A, val_t low, val_t high) {
     }
 }
 
-val_t pivot(val_t *A, val_t low, val_t high) {
+static inline val_t pivot(val_t low, val_t high) {
 
     val_t n = high - low;
 
-    if ((n + 1) < 2) return low;
+    if ((n + 1) < 2)
+        return low;
 
-    static struct timespec ts;
-    srandom(ts.tv_sec ^ ts.tv_nsec);
+      // BOTTLE-NECK
+//    static struct timespec ts;
+//    srandom(ts.tv_sec ^ ts.tv_nsec);
+//    return median_three(A, low + randint(n), low + randint(n), low + randint(n));
 
-    return median_three(A, low + randint(n), low + randint(n), low + randint(n));
+    return low + ((high - low) >> 1); // faster;
+
 }
 
-val_t partition(val_t *A, val_t low, val_t high) {
+static inline val_t partition(val_t *restrict A, val_t low, val_t high) {
 
     val_t j, pi, p, i;
-    pi = pivot(A, low, high);
+    pi = pivot(low, high);
     INPLACESWAP(&A[pi], &A[high]);
     p = A[high];
 
@@ -100,6 +104,3 @@ void quicksort(val_t *A, val_t na) {
 void quicksort_tail(val_t *A, val_t na) {
     return _quicksort_tail(A, 0, na - 1);
 }
-
-
-

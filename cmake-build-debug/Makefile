@@ -150,6 +150,33 @@ bubblesort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/bubblesort.c.s
 .PHONY : bubblesort.c.s
 
+coolutils.o: coolutils.c.o
+
+.PHONY : coolutils.o
+
+# target to build an object file
+coolutils.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/coolutils.c.o
+.PHONY : coolutils.c.o
+
+coolutils.i: coolutils.c.i
+
+.PHONY : coolutils.i
+
+# target to preprocess a source file
+coolutils.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/coolutils.c.i
+.PHONY : coolutils.c.i
+
+coolutils.s: coolutils.c.s
+
+.PHONY : coolutils.s
+
+# target to generate assembly for a file
+coolutils.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/coolutils.c.s
+.PHONY : coolutils.c.s
+
 hpsort.o: hpsort.c.o
 
 .PHONY : hpsort.o
@@ -203,6 +230,33 @@ insertionsort.s: insertionsort.c.s
 insertionsort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/insertionsort.c.s
 .PHONY : insertionsort.c.s
+
+introsort.o: introsort.c.o
+
+.PHONY : introsort.o
+
+# target to build an object file
+introsort.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/introsort.c.o
+.PHONY : introsort.c.o
+
+introsort.i: introsort.c.i
+
+.PHONY : introsort.i
+
+# target to preprocess a source file
+introsort.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/introsort.c.i
+.PHONY : introsort.c.i
+
+introsort.s: introsort.c.s
+
+.PHONY : introsort.s
+
+# target to generate assembly for a file
+introsort.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/introsort.c.s
+.PHONY : introsort.c.s
 
 main.o: main.c.o
 
@@ -339,6 +393,33 @@ shellsort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/shellsort.c.s
 .PHONY : shellsort.c.s
 
+speedtest.o: speedtest.c.o
+
+.PHONY : speedtest.o
+
+# target to build an object file
+speedtest.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/speedtest.c.o
+.PHONY : speedtest.c.o
+
+speedtest.i: speedtest.c.i
+
+.PHONY : speedtest.i
+
+# target to preprocess a source file
+speedtest.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/speedtest.c.i
+.PHONY : speedtest.c.i
+
+speedtest.s: speedtest.c.s
+
+.PHONY : speedtest.s
+
+# target to generate assembly for a file
+speedtest.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/speedtest.c.s
+.PHONY : speedtest.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -351,12 +432,18 @@ help:
 	@echo "... bubblesort.o"
 	@echo "... bubblesort.i"
 	@echo "... bubblesort.s"
+	@echo "... coolutils.o"
+	@echo "... coolutils.i"
+	@echo "... coolutils.s"
 	@echo "... hpsort.o"
 	@echo "... hpsort.i"
 	@echo "... hpsort.s"
 	@echo "... insertionsort.o"
 	@echo "... insertionsort.i"
 	@echo "... insertionsort.s"
+	@echo "... introsort.o"
+	@echo "... introsort.i"
+	@echo "... introsort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -372,6 +459,9 @@ help:
 	@echo "... shellsort.o"
 	@echo "... shellsort.i"
 	@echo "... shellsort.s"
+	@echo "... speedtest.o"
+	@echo "... speedtest.i"
+	@echo "... speedtest.s"
 .PHONY : help
 
 

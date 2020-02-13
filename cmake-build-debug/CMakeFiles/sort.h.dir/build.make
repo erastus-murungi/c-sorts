@@ -161,6 +161,45 @@ CMakeFiles/sort.h.dir/hpsort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sort.h.dir/hpsort.c.s"
 	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c -o CMakeFiles/sort.h.dir/hpsort.c.s
 
+CMakeFiles/sort.h.dir/coolutils.c.o: CMakeFiles/sort.h.dir/flags.make
+CMakeFiles/sort.h.dir/coolutils.c.o: ../coolutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/sort.h.dir/coolutils.c.o"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sort.h.dir/coolutils.c.o   -c /Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c
+
+CMakeFiles/sort.h.dir/coolutils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sort.h.dir/coolutils.c.i"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c > CMakeFiles/sort.h.dir/coolutils.c.i
+
+CMakeFiles/sort.h.dir/coolutils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sort.h.dir/coolutils.c.s"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c -o CMakeFiles/sort.h.dir/coolutils.c.s
+
+CMakeFiles/sort.h.dir/speedtest.c.o: CMakeFiles/sort.h.dir/flags.make
+CMakeFiles/sort.h.dir/speedtest.c.o: ../speedtest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/sort.h.dir/speedtest.c.o"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sort.h.dir/speedtest.c.o   -c /Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c
+
+CMakeFiles/sort.h.dir/speedtest.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sort.h.dir/speedtest.c.i"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c > CMakeFiles/sort.h.dir/speedtest.c.i
+
+CMakeFiles/sort.h.dir/speedtest.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sort.h.dir/speedtest.c.s"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c -o CMakeFiles/sort.h.dir/speedtest.c.s
+
+CMakeFiles/sort.h.dir/introsort.c.o: CMakeFiles/sort.h.dir/flags.make
+CMakeFiles/sort.h.dir/introsort.c.o: ../introsort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/sort.h.dir/introsort.c.o"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sort.h.dir/introsort.c.o   -c /Users/erastusmurungi/Documents/GitHub/c-sorts/introsort.c
+
+CMakeFiles/sort.h.dir/introsort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sort.h.dir/introsort.c.i"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/erastusmurungi/Documents/GitHub/c-sorts/introsort.c > CMakeFiles/sort.h.dir/introsort.c.i
+
+CMakeFiles/sort.h.dir/introsort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sort.h.dir/introsort.c.s"
+	/usr/local/Cellar/llvm/9.0.1/bin/clang-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/erastusmurungi/Documents/GitHub/c-sorts/introsort.c -o CMakeFiles/sort.h.dir/introsort.c.s
+
 # Object files for target sort.h
 sort_h_OBJECTS = \
 "CMakeFiles/sort.h.dir/bubblesort.c.o" \
@@ -170,7 +209,10 @@ sort_h_OBJECTS = \
 "CMakeFiles/sort.h.dir/mergesort.c.o" \
 "CMakeFiles/sort.h.dir/selectionsort.c.o" \
 "CMakeFiles/sort.h.dir/shellsort.c.o" \
-"CMakeFiles/sort.h.dir/hpsort.c.o"
+"CMakeFiles/sort.h.dir/hpsort.c.o" \
+"CMakeFiles/sort.h.dir/coolutils.c.o" \
+"CMakeFiles/sort.h.dir/speedtest.c.o" \
+"CMakeFiles/sort.h.dir/introsort.c.o"
 
 # External object files for target sort.h
 sort_h_EXTERNAL_OBJECTS =
@@ -183,9 +225,12 @@ sort.h: CMakeFiles/sort.h.dir/mergesort.c.o
 sort.h: CMakeFiles/sort.h.dir/selectionsort.c.o
 sort.h: CMakeFiles/sort.h.dir/shellsort.c.o
 sort.h: CMakeFiles/sort.h.dir/hpsort.c.o
+sort.h: CMakeFiles/sort.h.dir/coolutils.c.o
+sort.h: CMakeFiles/sort.h.dir/speedtest.c.o
+sort.h: CMakeFiles/sort.h.dir/introsort.c.o
 sort.h: CMakeFiles/sort.h.dir/build.make
 sort.h: CMakeFiles/sort.h.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable sort.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable sort.h"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sort.h.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

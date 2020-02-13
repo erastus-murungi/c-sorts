@@ -4,11 +4,17 @@
 CMakeFiles/sort.h.dir/bubblesort.c.o: ../bubblesort.c
 CMakeFiles/sort.h.dir/bubblesort.c.o: ../sort.h
 
+CMakeFiles/sort.h.dir/coolutils.c.o: ../coolutils.c
+CMakeFiles/sort.h.dir/coolutils.c.o: ../sort.h
+
 CMakeFiles/sort.h.dir/hpsort.c.o: ../hpsort.c
 CMakeFiles/sort.h.dir/hpsort.c.o: ../sort.h
 
 CMakeFiles/sort.h.dir/insertionsort.c.o: ../insertionsort.c
 CMakeFiles/sort.h.dir/insertionsort.c.o: ../sort.h
+
+CMakeFiles/sort.h.dir/introsort.c.o: ../introsort.c
+CMakeFiles/sort.h.dir/introsort.c.o: ../sort.h
 
 CMakeFiles/sort.h.dir/main.c.o: ../main.c
 CMakeFiles/sort.h.dir/main.c.o: ../sort.h
@@ -24,4 +30,7 @@ CMakeFiles/sort.h.dir/selectionsort.c.o: ../sort.h
 
 CMakeFiles/sort.h.dir/shellsort.c.o: ../shellsort.c
 CMakeFiles/sort.h.dir/shellsort.c.o: ../sort.h
+
+CMakeFiles/sort.h.dir/speedtest.c.o: ../sort.h
+CMakeFiles/sort.h.dir/speedtest.c.o: ../speedtest.c
 

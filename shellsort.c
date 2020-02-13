@@ -12,8 +12,8 @@ void shellsort(val_t *A, val_t na) {
                            112, 48, 21, 7, 3, 1};
     val_t i, j, k, t, gap;
 
-    for (k = ng - 1; k >= 0; k--) {
-        for (i = gap = gaps[k]; i < na; i++) {
+    for (k = ng - 1; k >= 0; k--) {  // O(1)
+        for (i = gap = gaps[k]; i < na; i++) { // O
             t = A[i];
             for (j = i; j >= gap && A[j - gap] > t; j -= gap) {
                 A[j] = A[j - gap];

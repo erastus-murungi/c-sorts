@@ -22,9 +22,9 @@ void bubblesort(val_t *restrict A, val_t na);
 
 void print_array(int64_t *A, int64_t n);
 
-val_t pivot(val_t *restrict A, val_t low, val_t high);
+static inline val_t pivot(val_t low, val_t high);
 
-val_t partition(val_t *restrict A, val_t low, val_t high);
+static inline val_t partition(val_t *restrict A, val_t low, val_t high);
 
 val_t median_three(const val_t *restrict A, val_t i, val_t j, val_t k);
 
@@ -43,6 +43,12 @@ void insertion_sort(val_t *restrict A, val_t na);
 void _mergesort(val_t *restrict A, val_t *B, val_t n);
 
 val_t *msort(val_t *A, val_t na);
+
+void _introsort(val_t *A, val_t low, val_t high, val_t maxdepth);
+
+void introsort(val_t *A, val_t na);
+
+
 
 void shellsort(val_t *A, val_t na);
 
@@ -64,6 +70,11 @@ static inline void INPLACESWAP(val_t *a, val_t *b) {
         *a = *a ^ *b;
     }
 }
+static inline val_t *new_array(val_t array_size){
+    val_t *array = malloc(array_size * sizeof(val_t));
+    return array;
+}
+
 
 static inline void SWAP(val_t **a, val_t **b) {
     val_t *t = *b;
@@ -74,10 +85,14 @@ static inline void SWAP(val_t **a, val_t **b) {
 /**
  * implementation of a max heap for heap sort
  */
-void build_max_heap(val_t *A, val_t na);
+void build_max_heap(val_t *A, val_t low, val_t na);
 
 void max_heapify(val_t *A, val_t na, val_t i);
 
 int check_max_heap_invariant(const val_t *A, val_t na);
 
+void _hpsort(val_t *A, val_t low, val_t na);
+
 void hpsort(val_t *A, val_t na);
+
+void test_all(val_t num_iter, val_t array_size);

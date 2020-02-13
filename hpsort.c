@@ -29,7 +29,7 @@ void max_heapify(val_t *A, val_t na, val_t i) {
         l = left(i);
         r = right(i);
 
-        largest =  (l < na && A[l] > A[i]) ? l : i;
+        largest = (l < na && A[l] > A[i]) ? l : i;
 
         if (r < na && A[r] > A[largest]) {
             largest = r;
@@ -42,10 +42,10 @@ void max_heapify(val_t *A, val_t na, val_t i) {
     }
 }
 
-void build_max_heap(val_t *A, val_t na){
+void build_max_heap(val_t *A, val_t low, val_t na) {
     val_t j;
     for (j = (na >> 1); j >= 0; j--) {
-        max_heapify(A, na, j);
+        max_heapify(A, low + na, low + j);
     }
 }
 
@@ -65,15 +65,18 @@ int check_max_heap_invariant(const val_t *A, val_t na) {
     return 1;
 }
 
-void hpsort(val_t *A, val_t na){
+void _hpsort(val_t *A, val_t low, val_t na) {
     if (na < 2) return;
 
-    build_max_heap(A, na);
-    check_max_heap_invariant(A, na);
-
+    build_max_heap(A, low, na);
     uint32_t i;
-    for (i = na - 1; i >= 1; i--){
-        INPLACESWAP(&A[0], &A[i]);
-        max_heapify(A, i, 0);
+    for (i = low + na - 1; i >= 1; i--) {
+        INPLACESWAP(&A[low], &A[i]);
+        max_heapify(A, i, low);
     }
+}
+
+
+void hpsort(val_t *A, val_t na) {
+    _hpsort(A, 0, na);
 }

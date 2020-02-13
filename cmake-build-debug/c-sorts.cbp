@@ -79,10 +79,16 @@
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c">
 			<Option target="sort.h"/>
 		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c">
+			<Option target="sort.h"/>
+		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c">
 			<Option target="sort.h"/>
 		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/insertionsort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/introsort.c">
 			<Option target="sort.h"/>
 		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/main.c">
@@ -98,6 +104,9 @@
 			<Option target="sort.h"/>
 		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/shellsort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c">
 			<Option target="sort.h"/>
 		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/CMakeLists.txt">

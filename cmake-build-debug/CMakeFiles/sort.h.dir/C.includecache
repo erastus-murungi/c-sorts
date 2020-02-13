@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-assert.h
--
-
 /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 stdio.h
 -
@@ -22,5 +16,13 @@ stdbool.h
 sys/time.h
 -
 stdlib.h
+-
+
+/Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c
+sort.h
+/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+string.h
+-
+assert.h
 -
 
