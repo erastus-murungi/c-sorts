@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/erastusmurungi/Documents/GitHub/c-sorts/main.c
+sort.h
+/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+
+/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+stdio.h
+-
+stdint.h
+-
+stdbool.h
+-
+sys/time.h
+-
+stdlib.h
+-
+

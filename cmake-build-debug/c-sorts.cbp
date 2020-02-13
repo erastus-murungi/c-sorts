@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="c-sorts"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sort.h">
+				<Option output="/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/sort.h" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/llvm/9.0.1/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 sort.h"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sort.h/fast">
+				<Option output="/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/sort.h" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/llvm/9.0.1/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 sort.h/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/insertionsort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/main.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/mergesort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/quicksort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/selectionsort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
