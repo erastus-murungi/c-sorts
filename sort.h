@@ -44,9 +44,9 @@ void _mergesort(val_t *restrict A, val_t *B, val_t n);
 
 val_t *msort(val_t *A, val_t na);
 
-void _introsort(val_t *A, val_t low, val_t high, val_t maxdepth);
+void _introsort(val_t *restrict A, val_t low, val_t high, val_t maxdepth);
 
-void introsort(val_t *A, val_t na);
+void introsort(val_t *restrict A, val_t na);
 
 
 
