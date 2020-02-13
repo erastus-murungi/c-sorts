@@ -6,47 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c
-stdint.h
--
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-assert.h
--
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/insertionsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/introsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
 /Users/erastusmurungi/Documents/GitHub/c-sorts/main.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/mergesort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/quicksort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/selectionsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/shellsort.c
 sort.h
 /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 
@@ -60,13 +20,5 @@ stdbool.h
 sys/time.h
 -
 stdlib.h
--
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-string.h
--
-assert.h
 -
 

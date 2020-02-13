@@ -69,19 +69,21 @@ static inline val_t pivot(val_t low, val_t high) {
 
 void introsort(val_t *A, val_t na) {
     if (na < 2) return;
-    uint64_t max_depth = msb(na);
+    uint64_t max_depth = msb(na) << 1;
     _introsort(A, 0, na - 1, max_depth);
 }
 
 void _introsort(val_t *A, val_t low, val_t high, val_t maxdepth) {
-    while (low < high) {
-        if ((high - low) <= INSERTION_THRESHOLD) {
-            _insertionsort(A, low, high + 1);
-            return;
-        } else if (maxdepth == 0) {
-            _hpsort(A, low, (high - low + 1));
-            return;
-        } else {
+    /** Careful combination that gets the best of the worlds of quicksort, insertion sort and heap_sort */
+
+    if ((high - low) <= INSERTION_THRESHOLD) {
+        _insertionsort(A, low, high + 1);
+        return;
+    } else if (maxdepth == 0) {
+        _hpsort(A, low, (high - low + 1));
+        return;
+    } else {
+        while (low < high) {
             val_t p = partition(A, low, high);
             // quicksort
             if (p - low < high - p) {

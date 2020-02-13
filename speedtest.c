@@ -20,6 +20,10 @@ static inline void copy_array(val_t *dest, val_t *src, val_t n) {
 }
 
 void test_all(val_t num_iter, val_t array_size) {
+    if (array_size < 0){
+        fprintf(stderr, "IndexError: negative array size: %lld\n", array_size);
+    }
+
     val_t i;
     for (i = 0; i < num_iter; i++) {
         long t1, t2, t3, t4, t5, t6, t7, t8, t9, t10;

@@ -39,6 +39,8 @@ static void merge(val_t *restrict C, val_t *restrict A, val_t *restrict B, val_t
 }
 
 val_t *msort(val_t *A, val_t na) {
+    if (na < 2)
+        return A;
     val_t *B = malloc(sizeof(val_t) * na);
     _mergesort(B, A, na);
     return B;
