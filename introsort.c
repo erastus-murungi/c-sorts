@@ -69,7 +69,7 @@ static inline val_t pivot(val_t low, val_t high) {
 
 void introsort(val_t *A, val_t na) {
     if (na < 2) return;
-    uint64_t max_depth = msb(na) << 1;
+    uint64_t max_depth = msb(na);
     _introsort(A, 0, na - 1, max_depth);
 }
 
