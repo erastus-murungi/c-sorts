@@ -10,10 +10,11 @@ void _mergesort(val_t *B, val_t *A, val_t n) {
         B[0] = A[0];
     } else {
         val_t mid = n / 2;
-        val_t C[n];
+        val_t *C = malloc(sizeof(val_t) * n);
         _mergesort(C, A, mid);
         _mergesort(C + mid, A + mid, n - mid);
         merge(B, C, C + mid, mid, n - mid);
+        free(C);
     }
 }
 
