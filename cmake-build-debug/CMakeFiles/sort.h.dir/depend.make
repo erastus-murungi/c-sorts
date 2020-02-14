@@ -10,6 +10,9 @@ CMakeFiles/sort.h.dir/bucketsort.c.o: ../sort.h
 CMakeFiles/sort.h.dir/coolutils.c.o: ../coolutils.c
 CMakeFiles/sort.h.dir/coolutils.c.o: ../sort.h
 
+CMakeFiles/sort.h.dir/countingsort.c.o: ../countingsort.c
+CMakeFiles/sort.h.dir/countingsort.c.o: ../sort.h
+
 CMakeFiles/sort.h.dir/hpsort.c.o: ../hpsort.c
 CMakeFiles/sort.h.dir/hpsort.c.o: ../sort.h
 
@@ -27,6 +30,9 @@ CMakeFiles/sort.h.dir/mergesort.c.o: ../sort.h
 
 CMakeFiles/sort.h.dir/quicksort.c.o: ../quicksort.c
 CMakeFiles/sort.h.dir/quicksort.c.o: ../sort.h
+
+CMakeFiles/sort.h.dir/radixsort.c.o: ../radixsort.c
+CMakeFiles/sort.h.dir/radixsort.c.o: ../sort.h
 
 CMakeFiles/sort.h.dir/selectionsort.c.o: ../selectionsort.c
 CMakeFiles/sort.h.dir/selectionsort.c.o: ../sort.h

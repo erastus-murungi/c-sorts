@@ -204,6 +204,33 @@ coolutils.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/coolutils.c.s
 .PHONY : coolutils.c.s
 
+countingsort.o: countingsort.c.o
+
+.PHONY : countingsort.o
+
+# target to build an object file
+countingsort.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/countingsort.c.o
+.PHONY : countingsort.c.o
+
+countingsort.i: countingsort.c.i
+
+.PHONY : countingsort.i
+
+# target to preprocess a source file
+countingsort.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/countingsort.c.i
+.PHONY : countingsort.c.i
+
+countingsort.s: countingsort.c.s
+
+.PHONY : countingsort.s
+
+# target to generate assembly for a file
+countingsort.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/countingsort.c.s
+.PHONY : countingsort.c.s
+
 hpsort.o: hpsort.c.o
 
 .PHONY : hpsort.o
@@ -492,6 +519,9 @@ help:
 	@echo "... coolutils.o"
 	@echo "... coolutils.i"
 	@echo "... coolutils.s"
+	@echo "... countingsort.o"
+	@echo "... countingsort.i"
+	@echo "... countingsort.s"
 	@echo "... hpsort.o"
 	@echo "... hpsort.i"
 	@echo "... hpsort.s"

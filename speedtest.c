@@ -2,8 +2,6 @@
 // Created by Erastus Murungi on 2/13/20.
 //
 #include "sort.h"
-#include <string.h>
-#include <assert.h>
 
 long get_milli(void) {
     struct timeval curr_time;
@@ -15,21 +13,19 @@ static int comparator(const void *x, const void *y) {
     return *(val_t *) x - *(val_t *) y;
 }
 
-static inline void copy_array(val_t *dest, val_t *src, val_t n) {
-    memcpy(dest, src, (n * sizeof(val_t)));
-}
-
 void test_all(val_t num_iter, val_t array_size) {
     if (array_size < 0){
         fprintf(stderr, "IndexError: negative array size: %lld\n", array_size);
+        exit(EXIT_FAILURE);
     }
 
     val_t i;
     for (i = 0; i < num_iter; i++) {
-        long t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11;
+        long t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12;
         val_t *array = new_array(array_size);
         val_t *working_storage = new_array(array_size);
-        random_array(array, array_size, 12);
+        val_t *sorted_array;
+        random_array(array, array_size, 25 );
         copy_array(working_storage, array, array_size);
 
         /** Simple sorts
@@ -94,9 +90,9 @@ void test_all(val_t num_iter, val_t array_size) {
 
         copy_array(array, working_storage, array_size);
         t8 = get_milli();
-        val_t *merge_arr = msort(array, array_size);
+        sorted_array = msort(array, array_size);
         printf("Merge sort ran in %ld ms for an array of size %lld \n", get_milli() - t8, array_size);
-        assert(is_sorted(merge_arr, array_size));
+        assert(is_sorted(sorted_array, array_size));
 
 
         copy_array(array, working_storage, array_size);
@@ -122,6 +118,18 @@ void test_all(val_t num_iter, val_t array_size) {
             printf("Bucket sort ran in %ld ms for an array of size %lld \n", get_milli() - t11, array_size);
             assert(is_sorted(array, array_size));
         }
+
+        if (max_array(array, array_size) > 5000000){
+            fprintf(stderr, "Array max too large for counting sort.\n");
+        }
+        else {
+            copy_array(array, working_storage, array_size);
+            t12 = get_milli();
+            sorted_array = counting_sort(array, array_size);
+            printf("Counting sort ran in %ld ms for an array of size %lld \n", get_milli() - t12, array_size);
+            assert(is_sorted(sorted_array, array_size));
+        }
+
     }
 
 

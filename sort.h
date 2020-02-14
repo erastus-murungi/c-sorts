@@ -13,6 +13,7 @@
 #include <sys/time.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <string.h>
 
 
 #define INSERTION_THRESHOLD (10)
@@ -72,18 +73,11 @@ static inline void swap(val_t *a, val_t *b) {
     }
 }
 static inline val_t *new_array(val_t array_size){
-    val_t *array = malloc(array_size * sizeof(val_t));
-    return array;
+    val_t *ar = malloc(array_size * sizeof(val_t));
+    return ar;
 }
 
-
-static inline void SWAP(val_t **a, val_t **b) {
-    val_t *t = *b;
-    *b = *a;
-    *a = t;
-}
-
-static inline val_t max_array(const val_t *A, val_t na);
+val_t max_array(const val_t *A, val_t na);
 
 /**
  * implementation of a max heap for heap sort
@@ -98,6 +92,12 @@ void _hpsort(val_t *A, val_t low, val_t na);
 
 void hpsort(val_t *A, val_t na);
 
+static inline void copy_array(val_t *dest, val_t *src, val_t n) {
+    memcpy(dest, src, (n * sizeof(val_t)));
+}
+
 void bucket_sort(val_t *A, val_t na);
+
+val_t *counting_sort(val_t *A, val_t na);
 
 void test_all(val_t num_iter, val_t array_size);

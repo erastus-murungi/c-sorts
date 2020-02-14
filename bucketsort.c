@@ -4,13 +4,11 @@
 
 #include "sort.h"
 
-struct arr {
+typedef struct {
     val_t *array;
     val_t length;
     val_t capacity;
-};
-
-typedef struct arr list;
+} list;
 
 static inline void free_array(list *A) {
     free(A->array);
@@ -19,15 +17,17 @@ static inline void free_array(list *A) {
 void append(list *A, val_t key) {
 
     if (A->length == A->capacity) {
-        val_t *new_loc = realloc(A->array, sizeof(val_t) * (A->length << 1));
+        val_t *new_loc = new_array(A->capacity * 2 * sizeof(val_t));
+        copy_array(new_loc, A->array, A->length);
+        free(A->array);
         A->array = new_loc;
-        A->capacity = A->length << 1;
+        A->capacity = A->capacity * 4;
     }
     A->array[A->length++] = key;
 }
 
 
-static inline val_t max_array(const val_t *A, val_t na) {
+val_t max_array(const val_t *A, val_t na) {
     if (na < 0) {
         fprintf(stderr, "error");
         exit(EXIT_FAILURE);
@@ -44,12 +44,11 @@ void bucket_sort(val_t *A, val_t na) {
         return;
 
     list *buckets = malloc(sizeof(list) * na);
-    assert(buckets);
 
     val_t i, m, bid;
     for (i = 0; i < na; i++) {
         buckets[i].length = 0;
-        buckets[i].array = malloc(sizeof(val_t));
+        buckets[i].array = new_array(sizeof(val_t));
         buckets[i].capacity = 1;
     }
     m = max_array(A, na);

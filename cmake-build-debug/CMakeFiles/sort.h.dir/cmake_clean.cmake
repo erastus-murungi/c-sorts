@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sort.h.dir/bubblesort.c.o"
   "CMakeFiles/sort.h.dir/bucketsort.c.o"
   "CMakeFiles/sort.h.dir/coolutils.c.o"
+  "CMakeFiles/sort.h.dir/countingsort.c.o"
   "CMakeFiles/sort.h.dir/hpsort.c.o"
   "CMakeFiles/sort.h.dir/insertionsort.c.o"
   "CMakeFiles/sort.h.dir/introsort.c.o"

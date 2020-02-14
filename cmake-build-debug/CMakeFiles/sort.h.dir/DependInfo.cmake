@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/bubblesort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/bucketsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/bucketsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/coolutils.c.o"
+  "/Users/erastusmurungi/Documents/GitHub/c-sorts/countingsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/countingsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/hpsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/insertionsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/insertionsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/introsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/introsort.c.o"
