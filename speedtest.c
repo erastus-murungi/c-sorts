@@ -25,7 +25,7 @@ void test_all(val_t num_iter, val_t array_size) {
         val_t *array = new_array(array_size);
         val_t *working_storage = new_array(array_size);
         val_t *sorted_array;
-        random_array(array, array_size, 25 );
+        random_array(array, array_size, 15);
         copy_array(working_storage, array, array_size);
 
         /** Simple sorts
