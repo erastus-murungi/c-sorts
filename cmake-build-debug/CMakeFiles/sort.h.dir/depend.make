@@ -4,6 +4,9 @@
 CMakeFiles/sort.h.dir/bubblesort.c.o: ../bubblesort.c
 CMakeFiles/sort.h.dir/bubblesort.c.o: ../sort.h
 
+CMakeFiles/sort.h.dir/bucketsort.c.o: ../bucketsort.c
+CMakeFiles/sort.h.dir/bucketsort.c.o: ../sort.h
+
 CMakeFiles/sort.h.dir/coolutils.c.o: ../coolutils.c
 CMakeFiles/sort.h.dir/coolutils.c.o: ../sort.h
 

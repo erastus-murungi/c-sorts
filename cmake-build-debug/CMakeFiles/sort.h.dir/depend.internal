@@ -4,6 +4,9 @@
 CMakeFiles/sort.h.dir/bubblesort.c.o
  /Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c
  /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+CMakeFiles/sort.h.dir/bucketsort.c.o
+ /Users/erastusmurungi/Documents/GitHub/c-sorts/bucketsort.c
+ /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 CMakeFiles/sort.h.dir/coolutils.c.o
  /Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c
  /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h

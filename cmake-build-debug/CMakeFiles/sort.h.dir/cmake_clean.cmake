@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sort.h.dir/bubblesort.c.o"
+  "CMakeFiles/sort.h.dir/bucketsort.c.o"
   "CMakeFiles/sort.h.dir/coolutils.c.o"
   "CMakeFiles/sort.h.dir/hpsort.c.o"
   "CMakeFiles/sort.h.dir/insertionsort.c.o"
@@ -7,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sort.h.dir/main.c.o"
   "CMakeFiles/sort.h.dir/mergesort.c.o"
   "CMakeFiles/sort.h.dir/quicksort.c.o"
+  "CMakeFiles/sort.h.dir/radixsort.c.o"
   "CMakeFiles/sort.h.dir/selectionsort.c.o"
   "CMakeFiles/sort.h.dir/shellsort.c.o"
   "CMakeFiles/sort.h.dir/speedtest.c.o"

@@ -79,6 +79,9 @@
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c">
 			<Option target="sort.h"/>
 		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/bucketsort.c">
+			<Option target="sort.h"/>
+		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c">
 			<Option target="sort.h"/>
 		</Unit>
@@ -98,6 +101,9 @@
 			<Option target="sort.h"/>
 		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/quicksort.c">
+			<Option target="sort.h"/>
+		</Unit>
+		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/radixsort.c">
 			<Option target="sort.h"/>
 		</Unit>
 		<Unit filename="/Users/erastusmurungi/Documents/GitHub/c-sorts/selectionsort.c">

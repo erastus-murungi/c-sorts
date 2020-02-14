@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/bubblesort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/bubblesort.c.o"
+  "/Users/erastusmurungi/Documents/GitHub/c-sorts/bucketsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/bucketsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/coolutils.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/hpsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/hpsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/insertionsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/insertionsort.c.o"
@@ -12,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/main.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/main.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/mergesort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/mergesort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/quicksort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/quicksort.c.o"
+  "/Users/erastusmurungi/Documents/GitHub/c-sorts/radixsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/radixsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/selectionsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/selectionsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/shellsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/shellsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/speedtest.c.o"

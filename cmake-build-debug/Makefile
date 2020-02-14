@@ -150,6 +150,33 @@ bubblesort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/bubblesort.c.s
 .PHONY : bubblesort.c.s
 
+bucketsort.o: bucketsort.c.o
+
+.PHONY : bucketsort.o
+
+# target to build an object file
+bucketsort.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/bucketsort.c.o
+.PHONY : bucketsort.c.o
+
+bucketsort.i: bucketsort.c.i
+
+.PHONY : bucketsort.i
+
+# target to preprocess a source file
+bucketsort.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/bucketsort.c.i
+.PHONY : bucketsort.c.i
+
+bucketsort.s: bucketsort.c.s
+
+.PHONY : bucketsort.s
+
+# target to generate assembly for a file
+bucketsort.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/bucketsort.c.s
+.PHONY : bucketsort.c.s
+
 coolutils.o: coolutils.c.o
 
 .PHONY : coolutils.o
@@ -339,6 +366,33 @@ quicksort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/quicksort.c.s
 .PHONY : quicksort.c.s
 
+radixsort.o: radixsort.c.o
+
+.PHONY : radixsort.o
+
+# target to build an object file
+radixsort.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/radixsort.c.o
+.PHONY : radixsort.c.o
+
+radixsort.i: radixsort.c.i
+
+.PHONY : radixsort.i
+
+# target to preprocess a source file
+radixsort.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/radixsort.c.i
+.PHONY : radixsort.c.i
+
+radixsort.s: radixsort.c.s
+
+.PHONY : radixsort.s
+
+# target to generate assembly for a file
+radixsort.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/radixsort.c.s
+.PHONY : radixsort.c.s
+
 selectionsort.o: selectionsort.c.o
 
 .PHONY : selectionsort.o
@@ -432,6 +486,9 @@ help:
 	@echo "... bubblesort.o"
 	@echo "... bubblesort.i"
 	@echo "... bubblesort.s"
+	@echo "... bucketsort.o"
+	@echo "... bucketsort.i"
+	@echo "... bucketsort.s"
 	@echo "... coolutils.o"
 	@echo "... coolutils.i"
 	@echo "... coolutils.s"
@@ -453,6 +510,9 @@ help:
 	@echo "... quicksort.o"
 	@echo "... quicksort.i"
 	@echo "... quicksort.s"
+	@echo "... radixsort.o"
+	@echo "... radixsort.i"
+	@echo "... radixsort.s"
 	@echo "... selectionsort.o"
 	@echo "... selectionsort.i"
 	@echo "... selectionsort.s"

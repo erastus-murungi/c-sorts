@@ -26,7 +26,7 @@ void test_all(val_t num_iter, val_t array_size) {
 
     val_t i;
     for (i = 0; i < num_iter; i++) {
-        long t1, t2, t3, t4, t5, t6, t7, t8, t9, t10;
+        long t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11;
         val_t *array = new_array(array_size);
         val_t *working_storage = new_array(array_size);
         random_array(array, array_size, 12);
@@ -34,7 +34,7 @@ void test_all(val_t num_iter, val_t array_size) {
 
         /** Simple sorts
          * For array sizes larger than */
-        val_t MAXSIZE = 30000;
+        val_t MAXSIZE = 10000;
 
         if (array_size < MAXSIZE) {
 
@@ -111,5 +111,19 @@ void test_all(val_t num_iter, val_t array_size) {
         introsort(array, array_size);
         printf("Introsort sort ran in %ld ms for an array of size %lld \n", get_milli() - t10, array_size);
         assert(is_sorted(array, array_size));
+
+        if (array_size > 600000){
+            printf("Array sizes larger than 600000 cause segmentation faults in bucketsort.\n");
+        }
+        else {
+            copy_array(array, working_storage, array_size);
+            t11 = get_milli();
+            bucket_sort(array, array_size);
+            printf("Bucket sort ran in %ld ms for an array of size %lld \n", get_milli() - t11, array_size);
+            assert(is_sorted(array, array_size));
+        }
     }
+
+
+
 }
