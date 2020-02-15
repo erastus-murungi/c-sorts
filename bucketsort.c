@@ -22,19 +22,6 @@ void append(list *A, val_t key) {
     A->array[A->length++] = key;
 }
 
-
-val_t max_array(const val_t *A, val_t na) {
-    if (na < 0) {
-        fprintf(stderr, "error");
-        exit(EXIT_FAILURE);
-    }
-
-    val_t max_val, i;
-    for (i = 0, max_val = A[0]; i < na; i++)
-        max_val = (A[i] > max_val) ? A[i] : max_val;
-    return max_val;
-}
-
 static inline void init_buckets(list* buckets, val_t na, val_t init_size) {
     for (val_t i = 0; i < na; i++) {
         buckets[i].length = 0;

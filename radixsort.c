@@ -9,18 +9,18 @@ val_t *_radix_sort(val_t *A, val_t *B, val_t na, uint8_t base) {
     val_t m, n, i, j, k, d, *keys;
 
     m = max_array(A, na);
-    n = ceil(msb(m) / msb(base)) + 2;  // word size
+    n = ceil(msb(m) / msb(base)) + 1;  // word size
     keys = malloc(val_t_size * na);
 
-    for (k = base, d = 1, j = 0; j < n; j++) {
-        for (i = 0; i < na; i++) {
+    for (k = base, d = 1, j = 0; j <= n; j++) {
+        for (i = 0; i < na; i++) {  // O (n)
             keys[i] = (A[i] % k) / d;  // getting the jth lsb digit of a number
         }
-        d = base;
-        k *= base;
+        d = base; k *= base;
         _counting_sort(A, B, keys, na); // O(n)
-        for (i = 0; i < na; i++)  // O(n)
+        for (i = 0; i < na; i++) { // O(n)
             A[i] = B[i]; // necessary
+        }
     }
     free(keys);
     return A;

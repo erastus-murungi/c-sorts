@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/erastusmurungi/Documents/GitHub/c-sorts/coolutils.c
+sort.h
+/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
+omp.h
+-
+
 /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 stdio.h
 -
@@ -23,8 +29,4 @@ string.h
 -
 math.h
 -
-
-/Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 

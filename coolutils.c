@@ -4,6 +4,10 @@
 
 #include "sort.h"
 
+#ifdef _OPENMP
+#include <omp.h>
+#endif
+
 uint64_t msb(uint64_t v) {
     static int deBruijn[64] = {0,
                                1, 2, 53, 3, 7, 54, 27, 4, 38, 41, 8, 34, 55, 48, 28,
@@ -22,6 +26,19 @@ uint64_t msb(uint64_t v) {
     if (v == (uint64_t) -1) return 64;
     v++;
     return deBruijn[(v * multiplier) >> 58];
+}
+
+val_t max_array(const val_t *A, val_t na) {
+    if (na < 0) {
+        fprintf(stderr, "error");
+        exit(EXIT_FAILURE);
+    }
+
+    val_t max_val, i;
+#pragma omp parallel for
+    for (i = 0, max_val = A[0]; i < na; i++)
+        max_val = (A[i] > max_val) ? A[i] : max_val;
+    return max_val;
 }
 
 bool is_sorted(const val_t *A, val_t na) {
