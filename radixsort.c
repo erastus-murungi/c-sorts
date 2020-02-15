@@ -22,6 +22,7 @@ val_t *_radix_sort(val_t *A, val_t *B, val_t na, uint8_t base) {
         for (i = 0; i < na; i++)  // O(n)
             A[i] = B[i]; // necessary
     }
+    free(keys);
     return A;
 }
 
