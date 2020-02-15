@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/erastusmurungi/Documents/GitHub/c-sorts/bucketsort.c
-sort.h
-/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
-
 /Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 stdio.h
 -
@@ -25,4 +21,10 @@ assert.h
 -
 string.h
 -
+math.h
+-
+
+/Users/erastusmurungi/Documents/GitHub/c-sorts/speedtest.c
+sort.h
+/Users/erastusmurungi/Documents/GitHub/c-sorts/sort.h
 

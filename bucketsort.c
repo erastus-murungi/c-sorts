@@ -19,7 +19,6 @@ void append(list *A, val_t key) {
         A->array = new_loc;
         A->capacity = A->capacity * 2;
     }
-
     A->array[A->length++] = key;
 }
 

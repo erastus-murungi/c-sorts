@@ -14,11 +14,14 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
+#include <math.h>
 
 
-#define INSERTION_THRESHOLD (10)
+#define INSERTION_THRESHOLD (4)
 
 typedef int64_t val_t;
+
+static const uint64_t val_t_size = sizeof(val_t);
 
 void bubblesort(val_t *restrict A, val_t na);
 
@@ -51,7 +54,6 @@ void _introsort(val_t *restrict A, val_t low, val_t high, val_t maxdepth);
 void introsort(val_t *restrict A, val_t na);
 
 
-
 void shellsort(val_t *A, val_t na);
 
 static void merge(val_t *restrict C, val_t *restrict A, val_t *restrict B, val_t na, val_t nb);
@@ -72,8 +74,9 @@ static inline void swap(val_t *a, val_t *b) {
         *a = *a ^ *b;
     }
 }
-static inline val_t *new_array(val_t array_size){
-    val_t *ar = malloc(array_size * sizeof(val_t));
+
+static inline val_t *new_array(val_t array_size) {
+    val_t *ar = malloc(array_size * val_t_size);
     return ar;
 }
 
@@ -93,11 +96,19 @@ void _hpsort(val_t *A, val_t low, val_t na);
 void hpsort(val_t *A, val_t na);
 
 static inline void copy_array(val_t *dest, val_t *src, val_t n) {
-    memcpy(dest, src, (n * sizeof(val_t)));
+    memcpy(dest, src, (n * val_t_size));
 }
+
+uint64_t msb(uint64_t v);
 
 void bucket_sort(val_t *A, val_t na);
 
-val_t *counting_sort(val_t *A, val_t na);
+val_t *radix_sort(val_t *A, val_t na, uint8_t base);
+
+val_t *_radix_sort(val_t *A, val_t *B, val_t na, uint8_t base);
+
+void *_counting_sort(val_t *a, val_t *b, const val_t *k, val_t na);
+
+val_t *counting_sort(val_t *a, val_t na);
 
 void test_all(val_t num_iter, val_t array_size);

@@ -6,10 +6,12 @@
 - Selection sort.
 - Merge sort.
 - Bubble sort.
-- Quick sort.
-- Quick sort with tail call optimization.
-- Introsort
+- Quick sort (with and without tail call optimization.)
+- Introsort (an efficient combination of heapsort, insertion sort and quicksort)
 - Shell sort
 - Heap sort
+- Radix sort
+- Counting sort
+- Bucket sort
 
 Comparison also done with inbuilt qsort.
