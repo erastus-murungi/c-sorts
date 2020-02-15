@@ -26,6 +26,7 @@ void *_counting_sort(val_t *a, val_t *b, const val_t *k, val_t na) {
         b[c[k[j]] - 1] = a[j];
         c[k[j]] -= 1;
     }
+    free(c);
     return b;
 }
 
