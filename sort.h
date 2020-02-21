@@ -5,8 +5,6 @@
 #ifndef C_SORTS_SORT_H
 #define C_SORTS_SORT_H
 
-#endif //C_SORTS_SORT_H
-
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -112,3 +110,5 @@ void *_counting_sort(val_t *a, val_t *b, const val_t *k, val_t na);
 val_t *counting_sort(val_t *a, val_t na);
 
 void test_all(val_t num_iter, val_t array_size);
+
+#endif //C_SORTS_SORT_H
