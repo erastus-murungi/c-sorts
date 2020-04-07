@@ -31,10 +31,10 @@ void _mergesort(val_t *B, val_t *A, val_t n) {
         val_t mid = n / 2;
         val_t *C = malloc(sizeof(val_t) * n);
 
-        #pragma omp task shared(A, B, C)
+        #pragma omp task shared (A, B, C)
         _mergesort(C, A, mid);
 
-        #pragma omp task shared(A, B, C)
+        #pragma omp task shared (A, B, C)
         _mergesort(C + mid, A + mid, n - mid);
 
         #pragma omp taskwait
