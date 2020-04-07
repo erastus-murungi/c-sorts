@@ -7,6 +7,7 @@
 
 val_t binary_search(val_t *T, val_t x, val_t high){
     val_t low, high, mid;
+    
     low = 0;
     high = max(high, low + 1);
     
@@ -24,13 +25,18 @@ val_t binary_search(val_t *T, val_t x, val_t high){
 void _mergesort(val_t *B, val_t *A, val_t n) {
     if (n == 1) {
         B[0] = A[0];
+    
     } else {
+        
         val_t mid = n / 2;
         val_t *C = malloc(sizeof(val_t) * n);
+
         #pragma omp task shared(A, B, C)
         _mergesort(C, A, mid);
+
         #pragma omp task shared(A, B, C)
         _mergesort(C + mid, A + mid, n - mid);
+
         #pragma omp taskwait
         pmerge(B, C, C + mid, mid, n - mid);
         free(C);
