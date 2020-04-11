@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/introsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/introsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/main.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/main.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/mergesort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/mergesort.c.o"
+  "/Users/erastusmurungi/Documents/GitHub/c-sorts/pmergesort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/pmergesort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/quicksort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/quicksort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/radixsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/radixsort.c.o"
   "/Users/erastusmurungi/Documents/GitHub/c-sorts/selectionsort.c" "/Users/erastusmurungi/Documents/GitHub/c-sorts/cmake-build-debug/CMakeFiles/sort.h.dir/selectionsort.c.o"

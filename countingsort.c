@@ -4,7 +4,6 @@
 
 #include "sort.h"
 
-
 void *_counting_sort(val_t *a, val_t *b, const val_t *k, val_t na) {
     /** k is an array of keys
      * b is the output array

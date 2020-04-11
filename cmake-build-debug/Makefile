@@ -366,6 +366,33 @@ mergesort.c.s:
 	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/mergesort.c.s
 .PHONY : mergesort.c.s
 
+pmergesort.o: pmergesort.c.o
+
+.PHONY : pmergesort.o
+
+# target to build an object file
+pmergesort.c.o:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/pmergesort.c.o
+.PHONY : pmergesort.c.o
+
+pmergesort.i: pmergesort.c.i
+
+.PHONY : pmergesort.i
+
+# target to preprocess a source file
+pmergesort.c.i:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/pmergesort.c.i
+.PHONY : pmergesort.c.i
+
+pmergesort.s: pmergesort.c.s
+
+.PHONY : pmergesort.s
+
+# target to generate assembly for a file
+pmergesort.c.s:
+	$(MAKE) -f CMakeFiles/sort.h.dir/build.make CMakeFiles/sort.h.dir/pmergesort.c.s
+.PHONY : pmergesort.c.s
+
 quicksort.o: quicksort.c.o
 
 .PHONY : quicksort.o
@@ -537,6 +564,9 @@ help:
 	@echo "... mergesort.o"
 	@echo "... mergesort.i"
 	@echo "... mergesort.s"
+	@echo "... pmergesort.o"
+	@echo "... pmergesort.i"
+	@echo "... pmergesort.s"
 	@echo "... quicksort.o"
 	@echo "... quicksort.i"
 	@echo "... quicksort.s"
