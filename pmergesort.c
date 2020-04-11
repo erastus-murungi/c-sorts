@@ -26,7 +26,6 @@ void pmergesort(val_t *B, val_t *A, const val_t n) {
         if (n < THRESHOLD){
                 _mergesort(B, A, n);
         } else {
-
                 const val_t mid = (uint64_t) n >> (uint64_t) 1;
                 val_t *C = malloc(sizeof(val_t) * n);
 
@@ -34,7 +33,6 @@ void pmergesort(val_t *B, val_t *A, const val_t n) {
                 pmergesort(C, A, mid);
 
                 pmergesort(C + mid, A + mid, n - mid);
-
 #pragma omp taskwait
                 pmerge(B, C, mid, C + mid, n - mid);
 
@@ -46,11 +44,9 @@ void pmerge(val_t *C, val_t *A, const val_t na, val_t *B, const val_t nb) {
         if (na < nb) {
                 pmerge(C, B, nb, A, na);
         }
-
         else if (na == 0)
                 return;
         else {
-
                 const val_t ma = (size_t) na >> (size_t) 1;
                 const val_t mb = bisect_right(A[ma], B, 0, nb);
                 C[ma + mb] = A[ma];
