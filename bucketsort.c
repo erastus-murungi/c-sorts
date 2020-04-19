@@ -52,7 +52,7 @@ void bucket_sort(val_t *A, val_t na) {
         nb = buckets[i].length;
         if (nb < 2)
             continue;
-        else if (nb < INSERTION_THRESHOLD)
+        else if (nb < THRESHOLD)
             insertion_sort(B, nb);  // inplace
         else
             introsort(B, nb); // if everything falls into the same bucket, then we have infinite loop, i don't call

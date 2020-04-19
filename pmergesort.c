@@ -34,7 +34,8 @@ void pmergesort(val_t *B, val_t *A, const val_t n) {
 
                 pmergesort(C + mid, A + mid, n - mid);
 #pragma omp taskwait
-                pmerge(B, C, mid, C + mid, n - mid);
+                 merge(B, C, C + mid, mid, n - mid);
+//                pmerge(B, C, mid, C + mid, n - mid);
 
                 free(C);
         }

@@ -4,7 +4,7 @@
 #include "sort.h"
 
 int main(void) {
-    int array_size = 1000000;
+    int array_size = 1300000;
     int num_iter = 1;
 
     test_all(num_iter, array_size);

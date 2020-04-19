@@ -19,5 +19,5 @@ void _insertionsort(val_t *A, val_t low, val_t na) {
 
 
 void insertion_sort(val_t *restrict A, val_t na) {
-    return _insertionsort(A, 0, na);
+        _insertionsort(A, 0, na);
 }

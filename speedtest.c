@@ -22,7 +22,7 @@ void test_all(val_t num_iter, val_t array_size) {
                 val_t *array = new_array(array_size);
                 val_t *working_storage = new_array(array_size);
                 val_t *sorted_array;
-                random_array(array, array_size, 16);
+                random_array(array, array_size, 10);
                 copy_array(working_storage, array, array_size);
 
                 /** Simple sorts
@@ -100,6 +100,15 @@ void test_all(val_t num_iter, val_t array_size) {
                 clock_gettime(CLOCK_MONOTONIC, &end);
                 printf("Merge sort ran in %f ms for an array of size %lld \n", diff(start, end), array_size);
                 assert(is_sorted(sorted_array, array_size));
+                free(sorted_array);
+
+                copy_array(array, working_storage, array_size);
+                clock_gettime(CLOCK_MONOTONIC, &start);
+                sorted_array = imsort(array, array_size);
+                clock_gettime(CLOCK_MONOTONIC, &end);
+                printf("Iterative merge-sort ran in %f ms for an array of size %lld \n", diff(start, end), array_size);
+                assert(is_sorted(sorted_array, array_size));
+                free(sorted_array);
 
 
                 copy_array(array, working_storage, array_size);
@@ -134,6 +143,7 @@ void test_all(val_t num_iter, val_t array_size) {
                         printf("Counting sort ran in %f ms for an array of size %lld \n", diff(start, end),
                                array_size);
                         assert(is_sorted(sorted_array, array_size));
+                        free(sorted_array);
                 }
 
                 copy_array(array, working_storage, array_size);
@@ -142,10 +152,7 @@ void test_all(val_t num_iter, val_t array_size) {
                 clock_gettime(CLOCK_MONOTONIC, &end);
                 printf("Radix sort ran in %f ms for an array of size %lld \n", diff(start, end), array_size);
                 assert(is_sorted(sorted_array, array_size));
-
+                free(sorted_array);
         }
-
-
-
 
 }

@@ -8,7 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/sort.h.dir/introsort.c.o"
   "CMakeFiles/sort.h.dir/main.c.o"
   "CMakeFiles/sort.h.dir/mergesort.c.o"
-  "CMakeFiles/sort.h.dir/pmergesort.c.o"
   "CMakeFiles/sort.h.dir/quicksort.c.o"
   "CMakeFiles/sort.h.dir/radixsort.c.o"
   "CMakeFiles/sort.h.dir/selectionsort.c.o"

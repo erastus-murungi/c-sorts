@@ -16,7 +16,9 @@
 #include <omp.h>
 
 
-#define INSERTION_THRESHOLD (4)
+#define THRESHOLD (64)
+
+#define INSERTION_THRESHOLD (10)
 
 typedef int64_t val_t;
 
@@ -79,9 +81,14 @@ static inline void swap(val_t *a, val_t *b) {
        typeof(b) _b = (b); \
        _a > _b ? _a : _b;})
 
+
 static inline val_t *new_array(val_t array_size) {
     val_t *ar = malloc(array_size * val_t_size);
     return ar;
+}
+
+static inline val_t min(val_t a, val_t b){
+        return a > b ? b : a;
 }
 
 val_t max_array(const val_t *A, val_t na);
@@ -116,6 +123,10 @@ void *_counting_sort(val_t *a, val_t *b, const val_t *k, val_t na);
 val_t *counting_sort(val_t *a, val_t na);
 
 val_t *pmsort(val_t *A, val_t na);
+
+void imergesort(val_t *B, val_t *A, val_t n);
+
+val_t *imsort(val_t *A, val_t na);
 
 void test_all(val_t num_iter, val_t array_size);
 

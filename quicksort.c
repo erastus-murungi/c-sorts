@@ -98,9 +98,9 @@ val_t median_three(const val_t *restrict A, val_t i, val_t j, val_t k) {
 }
 
 void quicksort(val_t *A, val_t na) {
-    return _quicksort(A, 0, na - 1);
+        _quicksort(A, 0, na - 1);
 }
 
 void quicksort_tail(val_t *A, val_t na) {
-    return _quicksort_tail(A, 0, na - 1);
+      _quicksort_tail(A, 0, na - 1);
 }
