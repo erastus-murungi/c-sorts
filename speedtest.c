@@ -64,7 +64,7 @@ void test_all(val_t num_iter, val_t array_size) {
                         assert(is_sorted(array, array_size));
                 } else {
                         printf("Simple sorts disabled for array_size %lld because they are too slow "
-                               "for arrays of less than %lld.\n", array_size, MAXSIZE);
+                               "for arrays of >= than %lld.\n", array_size, MAXSIZE);
                 }
 
                 /** Efficient sorts */
